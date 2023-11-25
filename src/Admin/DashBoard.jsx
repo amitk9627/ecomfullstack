@@ -47,19 +47,17 @@ export default function DashBoard() {
   };
 
   return (
-    <Box
-      sx={{  bgcolor: '#F2F4F8', display: 'flex', width:"100vw",height:"100vh"  }}
-    >
+    <Box sx={{ bgcolor: '#F2F4F8', display: 'flex', width: "100vw", height: "100vh" }}>
       <Tabs
         orientation="vertical"
         variant="scrollable"
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: 'divider',width:'10vw',bgcolor:'white' }}
+        sx={{ borderRight: 1, borderColor: 'divider', width: '13vw', bgcolor: 'white' }}
       >
         <Tab label="Add Product" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
+        <Tab label="All Product" {...a11yProps(1)} />
         <Tab label="Item Three" {...a11yProps(2)} />
         <Tab label="Item Four" {...a11yProps(3)} />
         <Tab label="Item Five" {...a11yProps(4)} />
@@ -70,7 +68,7 @@ export default function DashBoard() {
         <AddProduct />
       </TabPanel>
       <TabPanel value={value} index={1}>
-       <AllProduct />
+        <AllProduct />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three

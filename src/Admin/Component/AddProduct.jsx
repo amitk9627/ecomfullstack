@@ -29,15 +29,10 @@ const AddProduct = () => {
         }
     }
     const AddNewProduct = () => {
-
-       
-            const body = {
-                title, brand, category, thumbnail, quantity, description, regularPrice, salePrice, rating
-            };
-           axios.post("http://localhost:3002/createProduct",body,{headers:{}})
-           .then(data=>console.log(data))
-           .catch(e=>console.log(e))
-        
+        const body = { title, brand, category, thumbnail, quantity, description, regularPrice, salePrice, rating };
+        axios.post("https://fullstack-zwjf.onrender.com/createProduct", body, { headers: {} })
+        .then(data => console.log(data))
+        .catch(e => console.log(e))
     }
     return (
         <>
